@@ -1,0 +1,36 @@
+{
+  "name": "colyseus-react-example",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "webpack": "webpack",
+    "server": "node --harmony server/index.js",
+    "dev": "npm run server & webpack-dev-server --hot --inline",
+    "start": "npm run webpack && npm run server",
+    "local": "npm run webpack && nodemon server/index.js"
+  },
+  "author": "Endel Dreyer",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.1.21",
+    "babel-loader": "^6.1.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "copy-webpack-plugin": "^0.2.0",
+    "nodemon": "^1.18.9",
+    "react-hot-loader": "^1.3.0",
+    "webpack": "^1.12.6",
+    "webpack-dev-server": "^1.12.1"
+  },
+  "dependencies": {
+    "@material-ui/core": "^3.7.0",
+    "colyseus": "^0.4.2",
+    "colyseus.js": "^0.4.2",
+    "express": "^4.13.3",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  },
+  "engines": {
+    "node": "6.3.0"
+  }
+}
